@@ -7,7 +7,7 @@ Numbering by lines' tree levels
 
 ![ Tasks Added ](images/Tasks.png)
 
-You can setup your HotKeys for convenient.
+Note:The HotKeys may not setup as shown. You can setup your HotKeys for convenient.
 
 ## Commands
 
