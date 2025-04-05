@@ -9,6 +9,12 @@ Numbering by lines' tree levels
 
 Note:The HotKeys may not setup as shown. You can setup your HotKeys for convenient.
 
+## Install
+
+install indentation-based-numbering-0.1.3.vsix to your vs code to activate the extension.
+
+(on the file click mouse right button and choose install)
+
 ## Commands
 
 When caret at a block of text:
