@@ -1,0 +1,92 @@
+{
+  "name": "indentation-based-numbering",
+  "displayName": "Indentation Based Numbering",
+  "description": "Automatically adds numbers to lines with the same indentation level.",
+  "version": "0.1.3",
+  "publisher": "CricDev",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "indentation-based-numbering.activate",
+        "title": "Numbering: Activate Auto Numbering"
+      },
+      {
+        "command": "indentation-based-numbering.deactivate",
+        "title": "Numbering: Deactivate Auto Numbering"
+      },
+      {
+        "command": "indentation-based-numbering.renumber",
+        "title": "Numbering: Renumber Current Layer"
+      },
+      {
+        "command": "indentation-based-numbering.moveLeft",
+        "title": "Numbering: Move Lines Left"
+      },
+      {
+        "command": "indentation-based-numbering.moveRight",
+        "title": "Numbering: Move Lines Right"
+      },
+      {
+        "command": "indentation-based-numbering.adjustLinesByLevel",
+        "title": "Numbering: Adjust Lines by Level"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "indentation-based-numbering.activate",
+        "key": "ctrl+alt+n",
+        "mac": "cmd+alt+n"
+      },
+      {
+        "command": "indentation-based-numbering.deactivate",
+        "key": "ctrl+alt+m",
+        "mac": "cmd+alt+m"
+      },
+      {
+        "command": "indentation-based-numbering.renumber",
+        "key": "ctrl+alt+r",
+        "mac": "cmd+alt+r"
+      },
+      {
+        "command": "indentation-based-numbering.moveLeft",
+        "key": "ctrl+alt+left",
+        "mac": "cmd+alt+left"
+      },
+      {
+        "command": "indentation-based-numbering.moveRight",
+        "key": "ctrl+alt+right",
+        "mac": "cmd+alt+right"
+      },
+      {
+        "command": "indentation-based-numbering.adjustLinesByLevel",
+        "key": "ctrl+alt+l",
+        "mac": "cmd+alt+l"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src --ext ts"
+  },
+  "devDependencies": {
+    "@types/node": "18.x",
+    "@types/vscode": "^1.80.0",
+    "@typescript-eslint/eslint-plugin": "^8.28.0",
+    "@typescript-eslint/parser": "^8.28.0",
+    "eslint": "^8.41.0",
+    "typescript": "^5.1.3"
+  },
+  "dependencies": {
+    "lru-cache": "^11.1.0"
+  }
+}
