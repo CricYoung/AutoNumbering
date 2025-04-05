@@ -1,43 +1,47 @@
 # Auto Numbering 
 
-0.1.3.3.對每行資料加上數值編號，根據他們左右的相對位置。 
+0.1.3.3.Tree level movement and numbering
 
-## Demo
+Move current save-level lines(and their childs) Left or Right.
+Numbering by lines' tree levels
 
-## VS Code API
+![ Tasks Added ](https://github.com/CricYoung/AutoNumbering/images/Tasks.png)
 
-### `vscode` module
-
-- [`commands.registerCommand`](https://code.visualstudio.com/api/references/vscode-api#commands.registerCommand)
-- [`window.showInformationMessage`](https://code.visualstudio.com/api/references/vscode-api#window.showInformationMessage)
-
-### Contribution Points
-
-- [`contributes.commands`](https://code.visualstudio.com/api/references/contribution-points#contributes.commands)
+You can setup your HotKeys for convenient.
 
 ## Commands
 
-### Move Lines Left
+When caret at a block of text:
+
+### Move Same-Level Lines Left
 
 Moves the current line and its same-level lines (and their child levels) to the left.
 
-- Default Keybinding: `Ctrl+Alt+Left` (Windows/Linux), `Cmd+Alt+Left` (Mac)
-
-### Move Lines Right
+### Move Same-Level Lines Right
 
 Moves the current line and its same-level lines (and their child levels) to the right.
 
-- Default Keybinding: `Ctrl+Alt+Right` (Windows/Linux), `Cmd+Alt+Right` (Mac)
+### Numbering
 
-### Adjust Lines by Level
+#### Numbering Current Line (and all it's child line)
 
-Adjusts each line's indentation based on its level.
+#### Activate Auto Numbering 
 
-- Level 0: X = 0
-- Level 1: X = 2
-- Level 2: X = 4
-- Level 3: X = 6
-- And so on...
+#### DeActivate Auto Numbering 
 
-- Default Keybinding: `Ctrl+Alt+L` (Windows/Linux), `Cmd+Alt+L` (Mac)
+#### Adjust beginning of each line by their tree level 
+
+## Package Information
+
+```json
+{
+  "name": "AutoNumbering",
+  "version": "1.0.0",
+  "description": "Auto numbering tool",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CricYoung/AutoNumbering.git"
+  }
+}
+```
 
