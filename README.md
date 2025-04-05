@@ -5,7 +5,7 @@
 Move current save-level lines(and their childs) Left or Right.
 Numbering by lines' tree levels
 
-![ Tasks Added ](https://github.com/CricYoung/AutoNumbering/images/Tasks.png)
+![ Tasks Added ](images/Tasks.png)
 
 You can setup your HotKeys for convenient.
 
